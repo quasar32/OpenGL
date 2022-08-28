@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall -g
-CFLAGS = -Ilib/cglm/include -Ilib/glad/include -Ilib/glfw/include
+CFLAGS = -Ilib/cglm/include -Ilib/glad/include -Ilib/glfw/include -Ilib/stb
 LDFLAGS = -lopengl32 -mwindows -mconsole
 LDFLAGS += lib/glad/src/glad.o lib/cglm/libcglm.a lib/glfw/src/libglfw3.a 
 
@@ -20,6 +20,9 @@ libs:
 
 game: $(OBJ)
 	$(CC) $^ $(LDFLAGS)
+
+run: all
+	$(BIN)
 
 %.o: %.c
 	$(CC) -c $< $(CFLAGS)

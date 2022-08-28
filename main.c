@@ -6,6 +6,8 @@
 #include <string.h>
 #include <time.h>
 
+#define STB_IMAGE_IMPLEMENTATION
+
 #include <cglm/cglm.h>
 #include <glad/glad.h>
 #include <glfw/glfw3.h>
