@@ -400,9 +400,9 @@ int main(void)
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 		
 	glUseProgram(prog);
-	tex0 = load_texture(prog, "container.jpg", 0, GL_RGB); 
+	tex0 = load_texture(prog, "tex/container.jpg", 0, GL_RGB); 
  	stbi_set_flip_vertically_on_load(1);
-	tex1 = load_texture(prog, "awesomeface.png", 1, GL_RGBA);
+	tex1 = load_texture(prog, "tex/awesomeface.png", 1, GL_RGBA);
 
 	/*init data*/
 	model_loc = glGetUniformLocation(prog, "model");
