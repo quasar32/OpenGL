@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Iglad/include -Icglm/include -I -Wall -g
+CFLAGS = -Iglad/include -Icglm/include -Wall -g
 LDFLAGS = glfw/libglfw3.a cglm/build/libcglm.dll.a -lopengl32 -mwindows -mconsole
 
 SRC = $(wildcard glad/src/*.c) $(wildcard *.c) 
