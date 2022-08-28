@@ -53,3 +53,4 @@ dkms.conf
 
 # Vim files
 *~
+.ycm_extra_conf.py
