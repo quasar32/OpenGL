@@ -165,8 +165,8 @@ static GLuint link_shaders(int vs, int fs)
 static GLuint create_program(void) 
 {
 	GLuint vs, fs;
-	vs = compile_shader(GL_VERTEX_SHADER, "vertex.glsl");
-	fs = compile_shader(GL_FRAGMENT_SHADER, "fragment.glsl"); 
+	vs = compile_shader(GL_VERTEX_SHADER, "vertex.vs");
+	fs = compile_shader(GL_FRAGMENT_SHADER, "fragment.fs"); 
 	return link_shaders(vs, fs);
 }
 
